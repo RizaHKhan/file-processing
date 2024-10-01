@@ -16,7 +16,9 @@ export interface DatabaseUpdateResult extends ValidationResult {
   tableName: string;
 }
 
-export interface NotificationResult extends ValidationResult {}
+export interface NotificationResult extends ValidationResult {
+  message: string;
+}
 
 export interface ExtractedData {
   [key: string]: string | number;
